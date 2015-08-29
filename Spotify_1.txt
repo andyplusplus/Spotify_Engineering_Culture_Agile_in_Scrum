@@ -1,0 +1,80 @@
+Engineering culture in Spotify (subtitle: Leonardo Leite) 
+
+    One of the key success factors in our Spotify is agile engineering culture.  
+    Culture tends to be invisible. We do not notice it because it's there all the time. Kind of like the air we breathe. But if everyone understands the culture, we are more likely to be able to keep it and even strengthen it as we grow. So that is the purpose of this video. 
+
+    When our first music player was released in 2008, we practiced scrum. Scrum is an well established agile development approach. And it gave us a good squad-based culture. 
+    However, a few years later, we had grown into a bunch of squads, and found that some of the practises were actually getting the way. So we decided to make all these optional. Rules are a good start, but then break them when needed.  
+    We decided that agile matters more than scrum, and agile principles matters more than any specific practice. So we renamed the "scrum master" to "agile coach", because we wanted servant leaders more than process masters. 
+    We also started to use the term "Squad" instead of "Scrum squad." And our key driving force became autonomy.  
+    So what is an autonomous squad? A squad is a cross-functional self-organizing squad, usually less than 8 people. They sit together, and they have end-to-end responsibility for the stuff they build. Design, commit, deploy, maintenance, operations ... the whole thing. 
+    Each squad has a long-term mission, such as "make Spotify the best place to discover music," or internal stuff like infrastructure for A/B testing.
+    Autonomy basically means that the squad decides what to build, how to build it, and how to work together while doing it. 
+    There are of course some boundary to this, such as the squad mission, the overall product strategy for whatever area they are working on, and short-term goals that are renegotiated every quarter. 
+    Our office is optimized for collaboration. Here is a typical squad area. The squad members work closly together here, with adjustable desks, and easy access to each other's screens. 
+    The gather over here in the lounge is for things like planning sessions and retrospectives. And here a room for small meetings or just getting some quiet time. Almost all the walls are whiteboards. 
+    So ... why is autonomy so important? Well, because it is motivating, and motivated people build better stuff. Also autonomy makes us faster, by letting decisions happening locally in the squad, instead of via a bunch of managers, committees and etc. It help us to minimize handoffs and waitings, so we can scale without getting bogged down with dependencies and coordination.  
+    While each squad has its own mission, they need to be aligned with product strategy, company priorities and other squads. Basically be a good citizen in Spotify ecosystem. 
+    The Spotify overall mission is more important than any individual squad. So the key principle is really "be autonomous, but don't suboptimize". 
+    It's kinds of like a jazz band, although each musician is autonomous and play his own instrument, they listen to each other and focus on whole song together. That's how great music is created. 
+    So our goal is loosely coupled, but highly aligned squads. We're not quitge there yet, but we have experienced a lot of different ways to get closer. In fact that applies to most things in this video, this cultural description It is actually a mixture of what we are today and we are tring to become in the future. 
+    Alignment and autonomy may seem like different ends of a scale, as in more autonomy equals to less alignment. However, we think it more like two different dimensions. 
+    Down here is low alignment and low autonomy ... a micro-management culture. No high-level purposes, just shut up and follow orders. 
+    Up here is high alignment, but still low autonomy. Leaders are good at communicating what problem need to be solved, But they are also telling people how to solve it. 
+    High alignment and high autonomy means that leaders focus on what problem to solve, but let the squad figure out how to solve it. 
+    And down here ... Low alignment with high autonomy means squads do what they want, and basically all running in different directions. Leaders are helpless, our product becomes a Frankenstein. 
+    We are trying hard to be up here, aligned autonomy. And we keep experimenting with different ways to achieve this. 
+    So alignment enables autonomy. The stronger alignment we have, the more autonomy we can afford to grant. That means the leader's job is to communicate what problem needs to be solved and why. And the squads collabate with each other to find the best solution. 
+    One consequence of autonomy is that we have very little standardization. When people ask things like "What code editor do you use?" or "how do you plan?" the answer is mostly "depends on which squad." Some use scrum sprints, other kanban; some estimate Dories and measure velocity. Others do not. It's really up to each squad. 
+    Instead of formal standards, we have a strong culture of cross-pollination. When enough squads using a specific practice or tool, such as Git, that becomes the path of least resistance, and other squads tend to pick the same tool. 
+    Squads start to support the tool and help each other. And it becomes a defacto standard. This informal approach gives us a healthy balance between consistency and flexibility. 
+    Our architecture is based on a hundred separate systems, encoded and deployed independently. There is plenty of interaction, but each system focuses on one specific need, such as playlist management, search or monitoring. We try to keep them small and decoupled, with clear interfaces and protocols. 
+    Technically, each system is owned by one squad. In fact, most squads have several. But we have a inner-open source model. And our culture is more about share than owning. 
+    Suppose that squad one here needs something done in the system B and squad two knows that code best. They will typically ask squad two to do it. However, if the squad two doesn't have enough time or they have other priorities, then squad one doesn't need to wait. We hate waiting. Instead, they are welcome to go ahead and edit the code themself, and then ask the squad 2 to review the changes. 
+    So anyone can edit any code. But we have a peer code review culture. This improves quality and, most importantly, spreads knowledge. 
+    Over time, we developed design guidelines, code standards and other things to reduce the engineering fiction. But only when really necessary. 
+    So, on a scale from authoritarian to liberal, we definitely more on the liberal side. 
+    Now, none of this would work if it wasn't not for people. We have a really strong culture of mutual respect. I keep hearing comments like "My colleagues are awesome!". People often give credit to each other for great work, and seldom take credit themselves. 
+    Considering how much talent we have here, there is surprisingly little ego. 
+    One thing for new hires is that autonomy is kind of a little scary at first. You and your squad mates are expected to find your own solutions. No one will tell you what to do. But it turns out, if you ask for help, you'll get lots of it, and fast. 
+    There is a genuine respect for the fact that we are all in this boat together and we need to help each other to succeed. 
+    We focus a lot on motivation. Here is an example: a actual email from the head of people operations. 
+    Hi everyone, 
+    Our employee satisfaction survey says 91% enjoy working here, 
+    and 4% do not like. 
+    Now that may seems a pretty high satisfaction rate, especially considering our growing pain from 2006 to 2013, we doubled each year, and now we have over 1200 people. But then the e-mail continues ... 
+    This is of course not satisfactory, and we want to fix it. 
+    If you are one of 4% unhappy, please contact us. We are here for your sake, and nothing else. 
+    So good enough is not good enough. Half a year later things had improved, and satisfaction rate rose to 94%. With this strong focus on motivation it is no coincidence we have such this awesome reputation as workplace. 
+    Nevertheless, we do have plenty of problems to deal with. So we need to keep improving. 
+    OK. So we have over 50 squads spread across four cities. Some kind of structure is needed. Currently squads are grouped into "tribes". A tribe is a lightweight matrix. Each person is a member of a squad as well as a "chapter". 
+    The squad is the primary dimension, focusing on product release and quality. While the chapter is a compentency area, such as quality assistance, agile coaching or web development. As a squad member, my chapter leader is my formal light manager, a servant leader, focusing on coaching, and mentoring me as an engineer. So I can switch squads without getting getting a new manager. 
+    It's a pretty picture, neh? Except that it's not really true. In reality, the lines are not nicely straight, and things keep changing. Here's a reallie example from one moment in time from one tribe. 
+    And of course, it is all different right now. And that's OK! The most valuable communication happens in informal and unpredicable ways. 
+    To support this, we also have "guilds". A guild is a lightweight community of interest, where people across all the company together and share knowledge in a specific area. For example, leadership, web development, or continuous release. 
+    Anyone can join or leave a guild at any time. Guilds typically have mailing lists, bi-annual conferences and other informal communication methods. 
+    Most organizational charts are illusory. So our main focus is community, rather than hierarchical structures. 
+    We found that a strong enough community can get away with informal volatile structures. If you always need to know exactly who is making decisions, you are in the wrong place. 
+    One thing that matters a lot for autonomy is how easily we put our stuff into production. 
+    If release is hard, we will tempting to release seldom to avoid the pain. That means that each release is bigger, and therefore even harder. It's a vicious cycle. 
+    But if release is easy, We can release often. Thas means that each release is smaller and therefore easier. To stay in this loop and avoid that that one, we encourage small, frequent releases. And invest heavy investment in test automation, and continuous release infrastructure. 
+    Release should be routine, not a drama. Sometimes we make big investments to make release easier. 
+    For example, the original spotify desktop client was a single monolithic application. In the early days, with just a handful of developers, that was fine. But as we grew, this became a huge problem. Dozens of squads had to synchronize with each other for each release, and it could take months to get a stable version. 
+    Instead of creating lots of processes, rules stuff to manage this, we changed the architecture to enable decoupled releases. Using Chromium Embedded Framework, the client is now basically a web browser disguised. Each section is like a website frame, and squads can release their own thing directly. 
+    As part of this architectural change, we start to seeing each client platform as a client app, involving three different types of squads: client app squads, features squads and infrastructure squads. 
+    A feature squad focuses on one feature area, such as search. This squad will build, ship and maintain search related features on all platforms. 
+    A client app squad focuses on making release easy on one specific client platform, such as desktop, iOS or Android. Infrastructure squads focus on making other more effective. They provide tools and routines for things like continuous release, A/B testing, monitoring and operations. 
+    Regardless of the current structure, we always strive for a self-service model, kind of like a buffet. The restaurant staff don't serves you not directly. They enable you to help yourself. So we avoid handoffs like plague. 
+    For example, a operational squad, or client app squad does not put code code into production for people. Instead, their job is to make easy for feature squad your their code in production. 
+    Despite the self-service model, we sometimes need a bit of synchronization between squads making releases. We manage this using "release trains" and "feature toggles." 
+    Each client app has a release train, that departs regularly, typically every one to three weeks, depending of the customer. As in the real world, if the trains depart frequently and reliably, you do not need a lot of planning. Just show up and take the next train. 
+    Suppose these three squads are building stuff, and when the next release train arrives, the feature A, B and C are ready, while D is still in progress. The release train will include all four features, but the unfinished is hidden with a feature toggle. 
+    It may seem weired release unfinished features and hide them. But that's cool, because it exposes integration issues earlier and minimizes the need for code branchs. Unmerged code hide problems, and is a form of technical debt. 
+    Feature toggles lets us dynamically show and hide stuff in test as well as production. 
+    In addition to hiding unfinished work, we use it to A/B testing gradually roll out finished features. All in all, our release process is better than used to be. But we still see plenty of areas to improve. So we continue experimenting. 
+    This may seem like a scary model. Letting each squad put their own stuff into production without any formal centralized control. 
+    And we do scruel up somethmes. But we have learned that trust is more important than control. Why we hire someone we don't trust. 
+    Agile at scale requires trust at scale, and that means "no politics", it also means "no fear". 
+    Fear not only kills trust, it kills innovation. Because failures are punished, people will not dare try new things. 
+    So let's talk about failure. Actually no... Let's take a break ... 
+    Get on your feet, get some coffee. Let's let these ideas mature, and come back when you're ready for part 2. Continued ... 
