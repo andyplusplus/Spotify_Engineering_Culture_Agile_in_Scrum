@@ -1,0 +1,153 @@
+    Spotify Engineering Culture
+     Part 2 of 2
+
+    Hi you are back. Great, 
+    Now you've probably forgoten all about part one. So lets do a quick recap. 
+
+    Our culture is based on agile principles. All engineering happens in squads. And we try to keep them loosely coupled and tightly aligned. 
+    We like cross-pollination, and have an internal open source model for code. 
+    Squad do small and frequent releases, which is enabled by decoupling.
+    Our self-service model minimizes the need for handoffs. And we use "release train" and "feature toggles" to get stuff in production early and often.          And since culture is all about the people, we focused on motivation, community and trust. Rather than structure and control. That was part one.
+
+    And now, I' like to talk about "failure". Our founder Daniel put it nicely: "We aim to make mistakes faster than anyone else." 
+    Yeah, I know, it sounds a bit crazy. But here is the idea. "To build something really cool. we will inevitably make mistakes along the way. Right?             But each failure is also learning. So when we do fail, we want it to happen fast, so we can learn fast, and therefore improve fast. It's a strategy for long term success. 
+    It's like with kids, you can keep the toddler in the cradle, and she will be safe, but she won't learn much, and won't be very happy. If instead you let she run around and explore the world. She'll fail and fall sometimes, but she'll be happier, and develop faster, and the wounds, well, they usually heal. So Spotify is a fail-friendly environment. We are more interested in fast failure recovery, than failure avoidance. 
+    Our internal blog has articles like: "Celebrate failure", and stories like "How we shot ourselves in the foot". Some squads even have a "fail wall", Where people showoff their latest failures and learnings. 
+    Failing without learning is, well, just failing. 
+    So when something goes wrong, we usually follow up with a postmortem. This is never about "whose fault was it.", It's about:
+     What happened? 
+     What did we learn? 
+     What will we change?" 
+
+    Postmortem is actually part of our incident management workflow. So an incident "ticket is not closed when the problem is solved" is closed when we capture the learnings to avoid the same problem in the future. 
+    Fix the process, not just the product.
+
+    In addition, all squads do retrospects every few weeks to talk about what's working well, and what to do next. 
+
+    All in all, Spotify has strong culture of continuous improvement, driven from below and supported from above. 
+    However, failing must be non-lethal, or we don't live to failing again. So we promte the concept of "Limited Balst Radius". 
+
+    The architect is quite decoupled. So if a squad makes a mistake. It will usually impact a small part of the system. And not bring everything down. 
+    And since the squad has end-to-end responsibility for their stuff without handoffs. They can usually fix the problem fast. 
+    Also most new features are rolled out gradually, start with just a tiny percent of our users, and closly monitored. Once the feature proves to be stable, we gradually roll it out to the rest of the world. 
+    So if something goes wrong, it normally only affect a small part of the system, for a small number of users, over a short period of time.
+
+    This limited blaster radious give squads courage to do lots of small experiments, and learn really fast, instead of spending time trying to predicting and control all risky events. 
+    Mario Andretti put it nicely. "If everything is under control, you're going to slow!"
+    
+    All right, lets talk about product development. 
+    Our product development approach is based on lean startup principles. And it summarized by the mentra:
+    Think it. 
+    Build it. 
+    Ship it. 
+    Tweak it.
+    
+    The biggest risk is always building the wrong thing. So before deciding to build a new product or major feature. We try to inform ourselves with research, to people actually want this. If this solve the real problem for them. 
+
+    Then we define a narrative, kind of like a press release, or elevator pitch, showing up the benefits. For example, radio you can save, or follow your favorite artist. 
+
+    We also define hypothesis. How will this feature impact user behavior and our core metrics. 
+    Will they share more music? 
+    Will they login more often?
+    And we build various prototypes, and have people try them out to get a sense of what the feature might feel like, and help people react. 
+    Once we feel confident this thing is worth building. We go ahead and build a MVP -- minimal viable product, just enough to fulfil the narritive, but far from feature complete. You might call it the minimum lovable product. 
+    The next stage of learning happens once we put something into production. So we want to get there as quickly as possible. We release the MVP to just a few percent of our users. And use techniques like A/B testing to measure the impact and test the hypothesis. 
+    The squad monitors the data, and continues tweaking and redeploying, until they see the designed impact. Then they gradually roll out to the rest of the world, while take a time needed to sort out practical stuff like operation issues, and scaling. 
+    By the time the product and features are fully rolled out, we already know it's success, because if it isn't we don't not roll it out. 
+    Impact is always more important than velocity. So a feature is not considered done until it has achieved the desired impact. 
+    Note that like most things in this video, this is how we try to work. But our actual track record, of course, varies.
+    Now with all this experimentations going on, how do we actually plan. How do we know what is going to be released by which date. Well, the short answer is we mostly don't. We care more about innovation than predictability. And 100% predictability means 0% innovation. On a scale, we probabily be somewhere around here.
+    Of course, sometimes we do need to make delivery commitments, like for partner integration or marketing events. And that is sometimes involves standard tagile echniques, like velocity and burnup charts. 
+    But if we have to promise a date, we generally defer that commitment, until the features are already close to ready. 
+    By minimize the need for predictability, Squad can focused on deliver value, instead of being a slave of someone's arbitrary plan. 
+    One product owner said, I think of my squad as a group of volunteers that are here to work on something they are super-passionate about. 
+    So where is the ideas come from.
+    Like this dial a song product. Just pickup and dial the number of the song you want to listen to. Is it useful, it doesn't matter. 
+    The point is: if we try enough ideas, we are bound to strike gold from time to time, and quite often, the knowledge gained is worth more than the actual hack itself. Plus it's fun. 
+    
+    As a part of this, we do a Spotify wild hack week twice a year. Hunder of people hacking oil for a whole week. The mantra is 
+    Make cool things real! 
+    Build what ever you want! 
+    With whoever you want! 
+    In whatever way you want! 
+    
+    And then we have a big demo and party on Friday. 
+
+    We are always suprised by how much cool stuff can be build in just a week with this kind of creative freedom. Whether it is a helicopter made of lollipop sticks, or a whole new way of discovering music. 
+    It turns out that innoviation is not really that hard. People are natural innoviators. So just get out of their way, and let them try things out. 
+    In general, our culture is very experiment friendly. For example, should we use tool A or tool B? I don't know, Let's try both and compare.
+    Or, do we really need sprint planning meetings? I don't know, let's skip a view, and see if we miss them. 
+    Or should we show ten or five top songs on artist's page. I don't know. Let's test both, and meature the impact. Even the Spotify wild hack week started as an experiment, and now as a part of the culture. 
+    So instead of arguing initially to death, we are try to talk about things like 
+    What's the hypothesis? 
+    What did we learn? 
+    What will we try next? 
+
+    This give us more data-driven decisions, and less opinion driven, ego driven, or authority driven decisions. 
+    Although we are happy to experiment, and try different ways of doing things. Our culture is very waste-repellent. People will quick stop doing any thing that does not have any value. If it works, keep it. Otherwise dump it. 
+    For example, something that work for us so far, are:
+        . Retrospectives
+        . Daily standup
+        . Google docs
+        . Git
+        . and Guild Unconferences
+    Somethings that don't work for us are:
+        . Time reports
+        . Handoffs
+        . Separate test teams, or test phases
+        . Task estimates
+
+    We mostly just don't do these things. We also strongly alergic to 
+        . useless meetings
+        . and anything near corporate BS
+    One common source of waste is what we called Big Projects. Basically anything that requires a lots of squads to work tightly coordinated for many month.
+    Big project means big risk. So we are organized to minimize the need. And instead try hard to break project into a series of smaller efforts. 
+    Sometime however, there is a good reason to do a big project. And its potential benefits outweigh the risks. In those cases, we found some practises to be essential. 
+    . Visualized progress using various combinations of physical or electronical boards. 
+    . Do a daily sync meeting, where all squads involved meet up to resolve dependences. 
+    . Do a demo every week or two, for all the pieces come together. So we can evaluate the integrated produce to stake holders. 
+    These practises we do reduce waste because of improved collaberation and shorter feedback loop. 
+
+    We've also find that a project needs a small tight leadership group, to keep an eye on the big picture. 
+    Typically we have a tech lead, a product leader, and sometimes a design lead working tightly together. 
+    On a whole, we still experiment a lot with how to do big project, and we are not so good at it yet.
+
+    One thing we keep wrestling with is growth pain. As we grow, we risk falling into chaos. But if we over compensate, and have too much structure and process, we risk getting stuck in bureaucracy instead, and that is even worse. 
+    So the key question is really what is the minimum viable bureaucracy. The least amount of structure or process we can get away with to avoid total chaos. 
+    Both sides cost waste, but in different ways. So the waste repelled culture in agile mindset help us stay balanced.
+    The key thing about reducing waste is to visualize it, and talk about it often. So in addition to retrospective and postmortems, many squad have try to have big visuble improvement boards, that show things like what's block us? what are we doing about it. 
+
+    We also like to talk about definition of awesome. For example, awesome for this squad means things like 
+        . really finishing stuff. 
+        . easily ramp up new team members.
+        . and no recurring tasks and bugs. 
+
+    And our definition of Awesome Architecture includes: 
+        . I can build, test, and ship my feature within a week.
+        . I use data to learn from it, and my improved version is live in week two.
+    Keep in mind, though, awesome is a direction, not a place. So it doesn't even have to be realistic. But if we can agree on what awesome would look like, it help us focus on our improvement efforts, and track progress. 
+
+    Here is an example of an improvement tracking board inspired by a lead technique called Toyota Improvement Kata.
+    Top left shows what is the current situation, in this case, this quarter was having quality problems. 
+    Bottom left shows definition of awesome. In a perfect world, we have no quality problems at all.
+    Top right is a realistic target condition. If we were one step closer to awesome, what will that look like.
+    And finally, the bottom right shows the next three concrete actions. That will move us to the target condition. As things get done, the squad fills up with new actions.
+    
+    Boards like this live on the wall in the squadrum. And are typically followed up at the next restrspective. 
+
+    All right, I realize that making this video make it seems like everything in Spotify is just great. 
+    Well, truth is we have plenty of problems to deal with. And I can give you a long list of pain for you. But I won't, because it will go out of date quickly. 
+    We grow fast and change fast. And quite often, a seemly brilliant solution today will cause a nasty new problem tomorrow, just because we grow, and everything is different. 
+    However, most problems are short-lived, because people are actually do something about it. 
+    This company is pretty good at changing the architecture, processes, organization, or whatever is needed to solve the problem. And that is really the key point. Healthy culture heals broken process. 
+    Since culture is so important, we put a lot of effort into strengthen it. This video is just one small example. No one actually owns culture. But we do have quite a lot of people focusing on it. Group such as people operations had about 30 or so agile coaches spread across all squads. 
+
+    And we do bootcamps where new hires form a temporarily squad. They can solve a real problem, while also learn about our tech stack and process. And learn to work together as a team, all in one week. 
+     
+    It's intense, but along the way, they really get the culture. They often manage to put code in production in that time, which is impressive. 
+    But again, failing is perfectly OK, as long as they learn. The main culture still spread through story teller, whether it happens in blogs, at a postmortem, a demo or a lunch.
+    As long we keep sharing our successes or failings and learning from each other, I think the culture will stay healthy.
+    At the end of the day, culture, in any organization, is really just a sum of everyone's attitude in actions. 
+    You are the culture, so model the behavor you want to see.
+    That is it, we are done. I hope you enjoy the story, thanks for watching. 
+
